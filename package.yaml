@@ -19,19 +19,9 @@ default-extensions:
 dependencies:
   - base
   - gloss
-  - gloss-export
   - gloss-rendering
-  - lens
-  - generic-lens
-  - GLUT
-  - GLFW-b
   - OpenGLRaw
-  - OpenGL
   - JuicyPixels
-  - vector
-  - bytestring
-  - hashable
-  - bmp
 
 ghc-options: -Wall
 

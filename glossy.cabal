@@ -26,21 +26,11 @@ executable buffered
   default-extensions: BlockArguments DeriveGeneric DerivingVia NamedFieldPuns NamedWildCards OverloadedLabels OverloadedStrings PatternSynonyms TypeApplications ViewPatterns
   ghc-options: -Wall -main-is Buffered -O2 -threaded
   build-depends:
-      GLFW-b
-    , GLUT
-    , JuicyPixels
-    , OpenGL
+      JuicyPixels
     , OpenGLRaw
     , base
-    , bmp
-    , bytestring
-    , generic-lens
     , gloss
-    , gloss-export
     , gloss-rendering
-    , hashable
-    , lens
-    , vector
   default-language: Haskell2010
 
 executable unbuffered
@@ -52,19 +42,9 @@ executable unbuffered
   default-extensions: BlockArguments DeriveGeneric DerivingVia NamedFieldPuns NamedWildCards OverloadedLabels OverloadedStrings PatternSynonyms TypeApplications ViewPatterns
   ghc-options: -Wall -main-is Unbuffered -O2 -threaded
   build-depends:
-      GLFW-b
-    , GLUT
-    , JuicyPixels
-    , OpenGL
+      JuicyPixels
     , OpenGLRaw
     , base
-    , bmp
-    , bytestring
-    , generic-lens
     , gloss
-    , gloss-export
     , gloss-rendering
-    , hashable
-    , lens
-    , vector
   default-language: Haskell2010
