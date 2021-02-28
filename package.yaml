@@ -1,0 +1,50 @@
+name: glossy
+version: 0.0.1
+synopsis: my glossy 2021 drawings
+maintainer: Moisés Ackerman <m@akr.mn>
+license: AGPL-3.0-or-later
+github: akrmn/glossy
+default-extensions:
+  - BlockArguments
+  - DeriveGeneric
+  - DerivingVia
+  - NamedFieldPuns
+  - NamedWildCards
+  - OverloadedLabels
+  - OverloadedStrings
+  - PatternSynonyms
+  - TypeApplications
+  - ViewPatterns
+
+dependencies:
+  - base
+  - gloss
+  - gloss-export
+  - gloss-rendering
+  - lens
+  - generic-lens
+  - GLUT
+  - GLFW-b
+  - OpenGLRaw
+  - OpenGL
+  - JuicyPixels
+  - vector
+  - bytestring
+  - hashable
+  - bmp
+
+ghc-options: -Wall
+
+executables:
+  buffered:
+    source-dirs: buffered
+    main: Buffered.hs
+    ghc-options:
+      -main-is Buffered
+      -O2 -threaded
+  unbuffered:
+    source-dirs: unbuffered
+    main: Unbuffered.hs
+    ghc-options:
+      -main-is Unbuffered
+      -O2 -threaded

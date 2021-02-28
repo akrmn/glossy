@@ -1,0 +1,4 @@
+-c="hpack && cabal repl"
+--restart=.ghcid
+--restart=package.yaml
+-a

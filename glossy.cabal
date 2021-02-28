@@ -1,0 +1,70 @@
+cabal-version: 2.2
+
+-- This file has been generated from package.yaml by hpack version 0.34.3.
+--
+-- see: https://github.com/sol/hpack
+
+name:           glossy
+version:        0.0.1
+synopsis:       my glossy 2021 drawings
+homepage:       https://github.com/akrmn/glossy#readme
+bug-reports:    https://github.com/akrmn/glossy/issues
+maintainer:     Moisés Ackerman <m@akr.mn>
+license:        AGPL-3.0-or-later
+build-type:     Simple
+
+source-repository head
+  type: git
+  location: https://github.com/akrmn/glossy
+
+executable buffered
+  main-is: Buffered.hs
+  other-modules:
+      Paths_glossy
+  hs-source-dirs:
+      buffered
+  default-extensions: BlockArguments DeriveGeneric DerivingVia NamedFieldPuns NamedWildCards OverloadedLabels OverloadedStrings PatternSynonyms TypeApplications ViewPatterns
+  ghc-options: -Wall -main-is Buffered -O2 -threaded
+  build-depends:
+      GLFW-b
+    , GLUT
+    , JuicyPixels
+    , OpenGL
+    , OpenGLRaw
+    , base
+    , bmp
+    , bytestring
+    , generic-lens
+    , gloss
+    , gloss-export
+    , gloss-rendering
+    , hashable
+    , lens
+    , vector
+  default-language: Haskell2010
+
+executable unbuffered
+  main-is: Unbuffered.hs
+  other-modules:
+      Paths_glossy
+  hs-source-dirs:
+      unbuffered
+  default-extensions: BlockArguments DeriveGeneric DerivingVia NamedFieldPuns NamedWildCards OverloadedLabels OverloadedStrings PatternSynonyms TypeApplications ViewPatterns
+  ghc-options: -Wall -main-is Unbuffered -O2 -threaded
+  build-depends:
+      GLFW-b
+    , GLUT
+    , JuicyPixels
+    , OpenGL
+    , OpenGLRaw
+    , base
+    , bmp
+    , bytestring
+    , generic-lens
+    , gloss
+    , gloss-export
+    , gloss-rendering
+    , hashable
+    , lens
+    , vector
+  default-language: Haskell2010
